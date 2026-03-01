@@ -1,0 +1,15 @@
+
+digraph HumanLanguage {
+  rankdir=LR;
+
+  node [shape=box, style=rounded,fontsize=10];
+
+  A[label="A 他者の行為・発話"];
+  B[label="B 知覚・注意"];
+  C[label="C 身体的・情動的反応"];
+  D[label="D 立場・スタンス"];
+  E[label="E 外在化（音声・身振り・語）"];
+  F[label="F 社会的共有"];
+
+  A -> B -> C -> D -> E -> F;
+}

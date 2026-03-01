@@ -1,0 +1,20 @@
+
+digraph ConstructedConstraints {
+  rankdir=TB;
+  node [shape=box, style=rounded];
+
+  A[label="主体"];
+  B[label="行為・状態"];
+  C[label="対象"];
+  D[label="時間配置"];
+  E[label="命題としての文"];
+
+  A -> B;
+  B -> C;
+  B -> D;
+  A -> E;
+  B -> E;
+  C -> E;
+  D -> E;
+}
+

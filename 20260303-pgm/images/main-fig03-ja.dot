@@ -1,0 +1,14 @@
+// Dropbox/pub/pgm-presentation/20260303-pgm/images/main-fig03-ja.dot
+digraph Continuum {
+  rankdir=LR;
+  node [shape=box, style=rounded, fontname="MS Gothic", fontsize=14];
+
+  IG[label="即時文法\n(反応・時間順)"];
+  MID1[label="即時寄り"];
+  MID2[label="中間"];
+  MID3[label="調整寄り"];
+  AG[label="調整文法\n(社会化・形式化)"];
+
+  IG -> MID1 -> MID2 -> MID3 -> AG;
+  AG -> MID3 -> MID2 -> MID1 -> IG;
+}

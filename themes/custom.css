@@ -1,0 +1,132 @@
+/* @theme custom-theme */
+
+@import "default"; /* デフォルトテーマをベースに */
+
+section {
+  font-family: "IBM Plex Sans Cond", "Helvetica", "Arial", sans-serif;
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: -0.02em; /* 少し引き締める */
+  color: #222;
+  background-color: #fffefc; /* ほんのり温かい白 */
+  padding: 60px;
+}
+
+/* 見出しの引き締め＆メリハリ */
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: -0em;
+  margin-bottom: -0.7em;
+}
+
+h2 {
+  font-size: 44px;
+  color: #333;
+  letter-spacing: -0em;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 36px;
+  color: #444;
+  letter-spacing: -0em;
+}
+
+/* 箇条書きの自然な余白 */
+ul,
+ol {
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* 強調 */
+.important {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffecb5;
+  padding: 0.6em;
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+/* コードブロック */
+pre {
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  padding: 1em;
+  font-size: 90%;
+  font-family: "Courier New", monospace;
+  letter-spacing: -0.01em;
+}
+
+.red {
+  color: #d9534f;
+}
+.green {
+  color: #5cb85c;
+}
+.blue {
+  color: #107ab0;
+}
+
+/* 表の基本スタイル */
+
+.datasetlarge {
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 1.4em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.datasetsmall {
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 0.7em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.dataset {
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 0.72em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* 共通スタイル */
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+/* 通常テーブルの見出しに色をつける */
+table:not(.large) th {
+  background-color: #97d0d0;
+  font-weight: bold;
+}
+
+/* 偶数行のストライプ背景も、.large がないときだけ */
+table:not(.large) tr:nth-child(even) {
+  background-color: #c0d0d0;
+}
+
+/* .large テーブル全体にだけ大きいフォント */
+table.large {
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+.Largefont {
+  padding: 2.2em;
+  font-size: 1.6em;
+  font-weight: bold;
+}
