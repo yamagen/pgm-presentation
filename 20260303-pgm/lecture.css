@@ -21,6 +21,11 @@ hr {
   margin: 1.2em 0;
 }
 
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
 .red {
   color: red;
   font-weight: bold;
@@ -78,4 +83,16 @@ strong {
     "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo",
     sans-serif;
   font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #999;
+  padding: 0.4em 0.6em;
+  text-align: left;
 }
