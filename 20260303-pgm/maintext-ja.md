@@ -2,11 +2,12 @@
 title: "Final Lecture"
 ---
 
-Last change: 2026/03/02-23:03:48.
+Last change: 2026/03/03-00:22:01.
 
 # ウサギの文法、カメの文法: プロセス文法モデル概論
 
 ![Fast and Slow](./images/fastslow01.png)
+![qr code](./images/qr20260302230728327.png){ width=15% }
 
 ## 山元啓史 東京科学大学
 
@@ -47,7 +48,64 @@ pandoc -f markdown maintext-ja.md -s --mathjax -c lecture.css -o maintext-ja.htm
 
 ---
 
-## それから: こういう会話もごく▽普通にある。
+## それから: こういう会話もごく普通にある。
+
+- [Natural Step](https://github.com/yamagen/naturalsteps/blob/main/naturalsteps.pdf)は、自然な会話を習得支援するためのテキストブックです。こちらから抜粋。
+
+> A: こんにちは！  
+> B: きれいだね！  
+> C: すごい！
+
+> A: ほんとに？  
+> B: まあ！  
+> C: それで？
+
+> A: その写真、最高！  
+> B: 昼ごはん、カレーライス？  
+> C: 次は、私の番？
+
+> A: 明日、午後3時？  
+> B: これ、どう？  
+> C: もう少し、時間？
+
+---
+
+## それから: こういう長い会話もある。
+
+> A: 次の旅行、どこ？  
+> B: たぶん、京都。紅葉の季節、最高のタイミング！  
+> A: いいなぁ。京都、何年ぶり？  
+> B: 3年ぶり。前回、桜の時期だったけど、秋も楽しみ！  
+> A: お土産、よろしくね！  
+> B: もちろん。何がいい？  
+> A: 八つ橋！そう、生八つ橋、抹茶味。  
+> B: 了解！
+
+- この会話は、文法的には完全な文がほとんどないのに、**全体として意味が通じている**。
+- ちなみにUDで解析すると、ほとんどの行が「root」になります。
+
+> A: Where to next trip?  
+> B: Probably Kyoto. Perfect timing for the autumn leaves!  
+> A: Nice. How long has it been since you last went to Kyoto?  
+> B: Three years. Last time _was_ during cherry blossom season, but I'm really _looking_ forward to autumn leaves.  
+> A: _Bring_ me a souvenir!  
+> B: Of course. What do you _want_?  
+> A: Yatsuhashi. Fresh yatsuhashi, matcha flavor.  
+> B: Got it!
+
+- In English conversation, can verbs be omitted in a similar way?
+
+> Nice weather today.  
+> Perfect timing.  
+> No problem.
+
+は学校では、
+
+> It is nice weather today.  
+> It is perfect timing.  
+> It is no problem.
+
+こう言えってか？
 
 ---
 
@@ -98,6 +156,7 @@ pandoc -f markdown maintext-ja.md -s --mathjax -c lecture.css -o maintext-ja.htm
 
 ---
 
+<!--
 ## この講義で用いられる図は次の4つ。
 
 1. 時間幅とその幅の中で起こることを示す図
@@ -114,20 +173,22 @@ pandoc -f markdown maintext-ja.md -s --mathjax -c lecture.css -o maintext-ja.htm
 
 ---
 
-## この講義で用いられる例はつぎののようなもの。
-
-1. 日常会話でもちいられる例
-2. 古典文学でもちいられる例
-3. 英語で用いられる例
-
----
-
 ## メディアの操作が面倒なので、...
 
 はじめに関連する映像と例文をごらんいただきます。
 
 - Rick Wakeman - The other side of Rick Wakeman (1975): YouTube/Spotify
 - NBC Sitcom "Friends" Season 1 Episode 1: YouTube/Netflix
+
+---
+
+-->
+
+## この講義で用いられる例はつぎののようなもの。
+
+1. 日常会話でもちいられる例
+2. 古典文学でもちいられる例
+3. 英語で用いられる例
 
 ---
 

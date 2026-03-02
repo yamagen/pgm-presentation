@@ -1,16 +1,17 @@
-<title>Final Lecture</title>
-<style>
 body {
   max-width: none;
   margin: 1.5em 4em;
-  font-size: 150%;
+  font-size: 100%;
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 1.2em;
-  font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN",
-               "Meiryo", sans-serif;
+  font-family:
+    "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo",
+    sans-serif;
   font-weight: 700;
 }
 
@@ -20,13 +21,12 @@ hr {
   margin: 1.2em 0;
 }
 
-
 .red {
-color: red;
-font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
-#topbtn{
+#topbtn {
   position: fixed;
   right: 1.2em;
   bottom: 1.2em;
@@ -37,7 +37,45 @@ font-weight: bold;
   font-size: 90%;
   opacity: 0.85;
 }
-#topbtn:hover{ opacity: 1.0; }
+#topbtn:hover {
+  opacity: 1;
+}
 
+/* 画像が暴れないように */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-</style>
+/* コード（コマンド）を読みやすく */
+pre,
+code {
+  font-size: 90%;
+}
+
+/* 見出しが画面上部に貼りつかないように（リンクジャンプ時に便利） */
+h1,
+h2,
+h3 {
+  scroll-margin-top: 0.8em;
+}
+
+/* 印刷(PDF化)したときに変になりにくい */
+@media print {
+  body {
+    font-size: 10pt;
+    margin: 1.2cm;
+  }
+  a:link,
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-family:
+    "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo",
+    sans-serif;
+  font-weight: 700;
+}
