@@ -1,0 +1,43 @@
+<title>Final Lecture</title>
+<style>
+body {
+  max-width: none;
+  margin: 1.5em 4em;
+  font-size: 150%;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-top: 1.2em;
+  font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+               "Meiryo", sans-serif;
+  font-weight: 700;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 1.2em 0;
+}
+
+
+.red {
+color: red;
+font-weight: bold;
+}
+
+#topbtn{
+  position: fixed;
+  right: 1.2em;
+  bottom: 1.2em;
+  padding: 0.4em 0.7em;
+  border: 1px solid #888;
+  border-radius: 0.6em;
+  background: #fff;
+  font-size: 90%;
+  opacity: 0.85;
+}
+#topbtn:hover{ opacity: 1.0; }
+
+
+</style>

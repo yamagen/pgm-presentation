@@ -1,21 +1,21 @@
 ---
-marp: true
-style: |
-  .red {
-    color: red;
-    font-weight: bold;
-  }
+title: "Final Lecture"
 ---
 
-<small><small><small><small><small><small><small>
-
-Last change: 2026/03/02-16:42:01.
-
-</small></small></small></small></small></small></small>
+Last change: 2026/03/02-23:03:48.
 
 # ウサギの文法、カメの文法: プロセス文法モデル概論
 
-![w:80% center](./images/fastslow01.png) 山元啓史 東京科学大学
+![Fast and Slow](./images/fastslow01.png)
+
+## 山元啓史 東京科学大学
+
+<small>
+この資料は以下のコマンドでHTMLに変換しました。
+```
+pandoc -f markdown maintext-ja.md -s --mathjax -c lecture.css -o maintext-ja.html
+```
+</small>
 
 ---
 
@@ -27,20 +27,31 @@ Last change: 2026/03/02-16:42:01.
 
 ---
 
-### はじめに: こういう表現がごく普通にある。
+## この講義に関連する資料
 
-日: そんなこと言ったって。
-英: Even if you say that.
-日: 明日、駅、10時、ね？
-英: Tomorrow, the station, 10 o'clock, right?
-日: じゃ、採用で。
-英: So, keep that, shall we?
-日: えっ。
-英: Huh?
+- [Process Grammar Model](https://zenodo.org/records/18396496) Zenodoに公開されている、プロセス文法モデルの論文。
+- [Process Grammar Model - Digest](https://zenodo.org/records/18396349) プロセス文法モデルの概略を説明する資料。
 
 ---
 
-### プロセス文法モデル (Process Grammar Model) とは？
+## はじめに: こういう表現がごく普通にある。
+
+- 日: そんなこと言ったって。
+- 英: Even if you say that.
+- 日: 明日、駅、10時、ね？
+- 英: Tomorrow, the station, 10 o'clock, right?
+- 日: じゃ、採用で。
+- 英: So, keep that, shall we?
+- 日: えっ。
+- 英: Huh?
+
+---
+
+## それから: こういう会話もごく▽普通にある。
+
+---
+
+## プロセス文法モデル (Process Grammar Model) とは？
 
 - 人間の言語は、即時文法と調整文法の二つの文法から成る。
 - 即時文法は、反応の時間順・注意順・処理順を決める。
@@ -48,7 +59,7 @@ Last change: 2026/03/02-16:42:01.
 
 ---
 
-### 即時文法(immediate grammar, IG)
+## 即時文法(immediate grammar, IG)
 
 - <span class="red">反応</span>のタイミング、先行発話、注意の共有、立場の表明などに関わる法則性。
 - 破ると即座に通じなくなる、変更不可能な拘束。
@@ -56,7 +67,7 @@ Last change: 2026/03/02-16:42:01.
 
 ---
 
-### 調整文法(adjustive grammar, AG)
+## 調整文法(adjustive grammar, AG)
 
 - 主体の明示、役割分化、時間配置、再解釈可能性、などに関わる法則性。
 - 破ると解釈不能になる、変更不可能な拘束。
@@ -75,9 +86,9 @@ Last change: 2026/03/02-16:42:01.
 
 ---
 
-### 関連する図を先に示しておきます。
+## 関連する図を先に示しておきます。
 
-## これらの土台となる基礎概念は
+### これらの土台となる基礎概念は
 
 - **時間**
 - **反応**
@@ -144,24 +155,17 @@ Last change: 2026/03/02-16:42:01.
 
 ---
 
-<img src="./images/pgm-processing-dominance-standalone.svg"
-     style="width:150%; display:block; margin:auto;">
-
-図1 プロセス文法モデルの概略図。即時文法と調整文法の関係を示す。
+![図1 プロセス文法モデルの概略図](images/pgm-processing-dominance-standalone.svg)
 
 ---
 
 ### Q1. このそれぞれは文ですか？句点、ピリオドをつけてもいいですか？
 
-日: そんなこと言ったって。
-英: Even if you say that.
+- 日: そんなこと言ったって。
+- 英: Even if you say that.
 
----
-
-### Q1. このそれぞれは文ですか？句点、ピリオドをつけてもいいですか？
-
-- 日: 文ではないが、会話として成立
-- 英: 文ではないが、会話として成立
+→ 日: 文ではないが、会話として成立  
+→ 英: 文ではないが、会話として成立
 
 文なら、
 
@@ -172,8 +176,6 @@ Last change: 2026/03/02-16:42:01.
 
 構造的未完結 + 語用論的完結
 
-### Q2. じゃ、人間は会話として完結させている「言語」とは何か？
-
 ---
 
 ### Q2. じゃ、人間は会話として完結させている「言語」とは何か？
@@ -181,8 +183,6 @@ Last change: 2026/03/02-16:42:01.
 - 人間の言語は「文」ではない
 
   文や構文は、あとから切り出された一側面
-
-### Q3. 文では説明できないものの例をあげよ。
 
 ---
 
