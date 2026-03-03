@@ -2,7 +2,7 @@
 title: "Final Lecture"
 ---
 
-Last change: 2026/03/03-09:28:33.
+Last change: 2026/03/03-09:38:21.
 
 # ウサギの文法、カメの文法: プロセス文法モデル概論
 
@@ -1634,6 +1634,15 @@ digraph Continuum {
 プロセス文法モデルという名称で今後とも議論を進めていきます。
 ここまでが最終講義での議論内容になります。
 その後の議論は、また別の機会にお願いしたいと思います。
+
+---
+
+### Q74. 即時文法関連の記事や資料はどこで見られますか？
+
+- [PGM: Workbook](https://github.com/yamagen/pgm-workbook)
+- [PGM: Textbook](https://github.com/yamagen/pgm-textbook)
+- [AEADJ: An Expressions A Day](https://github.com/yamagen/aeadj)
+- [AEAD on Render](https://aead-search.onrender.com/)
 
 ---
 
