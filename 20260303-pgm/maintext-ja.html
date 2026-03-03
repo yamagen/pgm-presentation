@@ -30,7 +30,7 @@
 <header id="title-block-header">
 <h1 class="title">Final Lecture</h1>
 </header>
-<p>Last change: 2026/03/03-06:45:45.</p>
+<p>Last change: 2026/03/03-09:28:33.</p>
 <h1
 id="ウサギの文法カメの文法-プロセス文法モデル概論">ウサギの文法、カメの文法:
 プロセス文法モデル概論</h1>
@@ -323,12 +323,139 @@ alt="図1 プロセス文法モデルの概略図" />
 <li>変化の構造…時間圧による制約において言語はどうなっているか</li>
 <li>反応の構造 →おそらく、ツリー構造ではない</li>
 </ul>
+<h2 id="調整は青い線"><span class="blue">調整</span>は青い線。</h2>
+<ul>
+<li>積分全体</li>
+<li>長時間→意味を見る</li>
+<li>言語の構築
+どう意味が構築されるか、どう役割が分化するか、どう時間が整理されるか</li>
+<li>意味の構造…時間圧による制約において意味はどうなっているか</li>
+<li>意味の構造 →おそらく、ツリー構造である</li>
+</ul>
+<h2
+id="時間幅とその幅の中で起こること">時間幅とその幅の中で起こること</h2>
+<table>
+<thead>
+<tr>
+<th>時間幅</th>
+<th>数学</th>
+<th>物理の意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短時間</td>
+<td>微分</td>
+<td>局所変化・生成プロセス</td>
+</tr>
+<tr>
+<td>長時間</td>
+<td>積分</td>
+<td>履歴・蓄積・安定構造</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="基本の時間積分">基本の時間積分</h2>
+<p>ある時間的プロセス (f(t)) があるとして：</p>
+<p><span class="math display">\[
+\int_{0}^{T} f(t),dt
+\]</span></p>
+<p>これは：</p>
+<blockquote>
+<p>0 から (T) までの履歴の蓄積</p>
+</blockquote>
+<p>を意味する。</p>
+<hr />
+<h2 id="時間が無限大">時間が無限大</h2>
+<p><span class="math display">\[
+T \to \infty
+\]</span></p>
+<p>を取ると：</p>
+<p><span class="math display">\[
+\lim_{T \to \infty}
+\int_{0}^{T} f(t),dt
+\]</span></p>
+<blockquote>
+<p>長時間にわたる総蓄積 （履歴・経験・安定化）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>時間幅</th>
+<th>数学</th>
+<th>物理の意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短時間</td>
+<td>微分</td>
+<td>局所変化・生成</td>
+</tr>
+<tr>
+<td>長時間</td>
+<td>積分</td>
+<td>履歴・蓄積</td>
+</tr>
+</tbody>
+</table>
+<p>これを式で並べるなら：</p>
+<h3 id="短時間即時">短時間（即時）</h3>
+<p><span class="math display">\[
+\frac{dx}{dt}
+\]</span></p>
+<p>→ 局所変化 → 即時的処理</p>
+<hr />
+<h3 id="長時間履歴">長時間（履歴）</h3>
+<p><span class="math display">\[
+\int_0^T f(t),dt
+\]</span></p>
+<p>さらに：</p>
+<p><span class="math display">\[
+T \to \infty
+\]</span></p>
+<p>→ 安定構造・道具化</p>
+<p><span class="math display">\[
+\text{Immediate} \sim \frac{d}{dt}
+\qquad
+\text{Adjustive} \sim \int_0^{T} dt
+\]</span></p>
+<p>そして最後に：</p>
+<p><span class="math display">\[
+T \to \infty
+\]</span></p>
+<ul>
+<li>微分 → 局所情報のみ必要</li>
+<li>積分 → 全履歴を参照</li>
+</ul>
+<blockquote>
+<p>時間幅 = 必要な記憶量</p>
+</blockquote>
+<ul>
+<li>即時文法（最小資源）</li>
+<li>調整文法（蓄積）</li>
+</ul>
+<hr />
+<h2
+id="時間幅が短かいほど必要な記憶量は少なくなる">時間幅が短かいほど、必要な記憶量は少なくなる</h2>
+<p>じゃ、逆は？</p>
+<p><span class="math display">\[
+\lim_{T \to \infty}
+\int_0^T f(t),dt
+\]</span></p>
+<p>これは、</p>
+<ul>
+<li>微分（瞬間）</li>
+<li>積分（履歴）</li>
+<li>時間幅</li>
+</ul>
+<p>の三つの概念を同時に表す式。</p>
 <h3 id="質問">質問</h3>
 <ul>
 <li>Q. 反応の構造がツリー構造でなければ、どのような構造になるか？</li>
 <li>Q. 時間圧による制約に即した言語の構造はどのようなものか？</li>
 </ul>
-<h2 id="調整は青い線"><span class="blue">調整</span>は青い線。</h2>
 <hr />
 <p>表1: 時間幅とその幅の中で起こること</p>
 <table>
@@ -381,7 +508,7 @@ alt="図1 プロセス文法モデルの概略図" />
 </blockquote>
 <p>を表す。</p>
 <hr />
-<h2 id="基本の式">基本の式</h2>
+<h2 id="即時文法と調整文法-基本の式">即時文法と調整文法: 基本の式</h2>
 <p>時間の幅がどんどん短かくなっていくという連続化</p>
 <p><span class="math display">\[
 \frac{\Delta x}{\Delta t}
@@ -478,8 +605,8 @@ Narratives, Frontiers in Psychology, 10: 2908.</p>
 </ul>
 <h2 id="日本の研究者">日本の研究者</h2>
 <blockquote>
-<p>阪倉篤義 (1975) 文章と表現, 角川書店. 小松英雄 (2003)
-仮名文の構文原理—増補版—, 笠間書院.<br />
+<p>阪倉篤義 (1975) 文章と表現, 角川書店.<br />
+小松英雄 (2003) 仮名文の構文原理—増補版—, 笠間書院.<br />
 近藤泰弘 (2005) 平安時代語の副詞節の節連鎖構造について, 国語と国文学,
 82(11), 114-124.</p>
 </blockquote>
@@ -499,6 +626,21 @@ Narratives, Frontiers in Psychology, 10: 2908.</p>
 </ul>
 <p>言語使用が構文としての拘束ルールに従うよりも、
 心理学的に行為やイベントが想起される順に発話されることに自然に基づいている。</p>
+<hr />
+<h3 id="q.-連鎖構造の特徴は何ですか">Q. 連鎖構造の特徴は何ですか？</h3>
+<p>→各句節間の相互関係が必ずしも緊密でないこと</p>
+<p>Clause chain の例</p>
+<h3 id="隣接意味のみ成立する連鎖">「隣接意味のみ成立する連鎖」</h3>
+<ol type="1">
+<li>局所連関連鎖</li>
+<li>隣接限定連鎖</li>
+<li>局所意味連鎖</li>
+</ol>
+<h4 id="adjacency-based-clause-chain">adjacency-based clause chain</h4>
+<ul>
+<li>雨が降って、傘を買って、店員が忙しくて、レジが遅かった。</li>
+<li>原稿を書いて、肩が凝って、マッサージが混んでて、駅前が工事中だった。</li>
+</ul>
 <hr />
 <figure>
 <img src="images/clause-chain-basic-standalone.svg"
@@ -638,8 +780,10 @@ class="red">反応してしまったものが言語になる</span></p>
 社会的に共有可能な形で 外在化する仕組みである。</strong></p>
 </blockquote>
 <figure>
-<img src="./images/main-fig01-ja.svg" alt="fig01" />
-<figcaption aria-hidden="true">fig01</figcaption>
+<img src="./images/main-fig01-ja.svg"
+alt="図3:プロセス文法モデルにおける即時的な反応" />
+<figcaption
+aria-hidden="true">図3:プロセス文法モデルにおける即時的な反応</figcaption>
 </figure>
 <hr />
 <h3 id="q8.-この言語の定義には何が存在しないか">Q8.
@@ -649,10 +793,6 @@ class="red">反応してしまったものが言語になる</span></p>
 <strong>従来の言語理論の中心的要素が存在しない</strong>。</li>
 </ul>
 <p>…すなわち、</p>
-<figure>
-<img src="./images/main-fig01-ja.svg" alt="fig01" />
-<figcaption aria-hidden="true">fig01</figcaption>
-</figure>
 <ul>
 <li>C と D は<span class="red">従来の言語</span>以前</li>
 <li>E で初めて従来の言語のような形を取る</li>
